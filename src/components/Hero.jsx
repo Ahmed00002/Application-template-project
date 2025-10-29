@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { FileText, Download } from "lucide-react";
+import hero from "../assets/images/hero.svg";
 
 const Hero = () => {
   return (
@@ -8,9 +9,10 @@ const Hero = () => {
         {/* Text Section */}
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
-            Ready-Made <span className="text-blue-600">Application Forms</span>
+            Ready-Made{" "}
+            <span className="text-blue-600">Application Templates</span>
             <br />
-            Just Fill & Download Instantly!
+            Just Edit & Download Instantly!
           </h1>
           <p className="text-gray-600 text-lg mb-8">
             Choose from verified application templates, add your personal
@@ -27,7 +29,7 @@ const Hero = () => {
               Browse Templates
             </Link>
             <Link
-              to="/apply"
+              to="/templates/edit"
               className="inline-flex items-center justify-center border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-all font-medium"
             >
               Fill & Download <Download className="ml-2" size={18} />
@@ -38,9 +40,9 @@ const Hero = () => {
         {/* Image Section */}
         <div className="flex-1 flex justify-center">
           <img
-            src="https://cdn3d.iconscout.com/3d/premium/thumb/form-filling-online-3d-illustration-6755023-5596068.png"
+            src={hero}
             alt="Application Illustration"
-            className="w-80 md:w-[400px] drop-shadow-lg"
+            className="w-80 md:w-[400px] "
           />
         </div>
       </div>
